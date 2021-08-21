@@ -2,18 +2,17 @@ import Head from 'next/head'
 import Header from '../components/Header'
 
 export default function Home() {
-  export default function Home() {
-    return (
-      <div>
-        <Head>
-          <title>Airbnb  Clone </title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+  return (
+    <div>
+      <Head>
+        <title>Airbnb  Clone </title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-        <Header />
-        {/*header */}
-        {/*banner */}
-        {/*body*/}
-      </div>
-    )
-  }
+      <Header />
+      {/*header */}
+      {/*banner */}
+      {/*body*/}
+    </div>
+  )
+}
