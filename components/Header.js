@@ -52,7 +52,7 @@ function Header({ placeholder }) {
     return (
         <header className="sticky top-0 z-50 
         grid grid-cols-3 bg-white shadow-md p-5 
-        md: px-10">
+        md:px-10">
             {/*left component*/}
             <div
                 onClick={() => router.push('/')}
@@ -96,7 +96,7 @@ function Header({ placeholder }) {
                 </div>
             </div>
             {searchInput && (
-                <div className="flex flex-col col-span-3 mx-">
+                <div className="flex flex-col col-span-3 mx-auto">
                     <DateRangePicker
                         ranges={[selectionRange]}
                         onChange={handleSelect}
