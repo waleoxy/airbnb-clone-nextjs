@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 function LargeCard({ img, title, description, buttonText }) {
+
     const myLoader = ({ src, width, quality }) => {
         return `${src}?w=${width}&q=${quality || 75}`
     }

@@ -7,8 +7,7 @@ import Link from "next/link";
 function Footer() {
     return (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 
-        lg:grid-cols-4 justify-center 
-        p-16 ml-10 bg-gray-100">
+        lg:grid-cols-4 pt-5 mt-16 bg-gray-100">
             <div className="m-5">
                 <h5 className="font-bold text-sm">ABOUT</h5>
                 {aboutLinkData.map(link => (
