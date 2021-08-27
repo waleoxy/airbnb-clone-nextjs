@@ -13,7 +13,7 @@ function InfoCard({ img, location, title, description, star, price, total }) {
          mt-5 border-b cursor-pointer hover:opacity 
          hover:shadow-lg transiton duration-200
          ease-out first:border-t">
-            <div className="relative h-72 w-full md:h-52 md:w-80 flex-shrink-0">
+            <div className="relative h-72 w-full md:h-52 md:w-80">
                 <Image
                     className="rounded-2xl"
                     loader={myLoader}
@@ -23,7 +23,7 @@ function InfoCard({ img, location, title, description, star, price, total }) {
                 />
                 <HeartIcon className="md:hidden absolute fill-current right-0 h-7 cursor-pointer" />
             </div>
-            <div className="flex flex-col flex-grow pl-2">
+            <div className="flex flex-col pl-2">
                 <div className="flex justify-between">
                     <p>{location} </p>
                     <HeartIcon className="invisible md:visible h-7 cursor-pointer" />
