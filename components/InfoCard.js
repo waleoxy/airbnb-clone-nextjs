@@ -13,17 +13,19 @@ function InfoCard({ img, location, title, description, star, price, total }) {
          mt-5 border-b cursor-pointer hover:opacity 
          hover:shadow-lg transiton duration-200
          ease-out first:border-t">
-            <div className="relative h-72 w-full md:h-52 md:w-80">
-                <Image
-                    className="rounded-2xl"
-                    loader={myLoader}
-                    src={img}
-                    layout="fill"
-                    objectFit="cover"
-                />
-                <HeartIcon className="md:hidden absolute fill-current right-0 h-7 cursor-pointer" />
+            <div className="relative">
+                <div className="relative h-72 w-full md:h-56 md:w-80">
+                    <Image
+                        className="rounded-2xl"
+                        loader={myLoader}
+                        src={img}
+                        layout="fill"
+                        objectFit="cover"
+                    />
+                </div>
+                <HeartIcon className="absolute md:hidden fill-current right-5 top-2 h-7 cursor-pointer" />
             </div>
-            <div className="flex flex-col pl-2">
+            <div className="flex flex-col flex-grow pl-2">
                 <div className="flex justify-between">
                     <p>{location} </p>
                     <HeartIcon className="invisible md:visible h-7 cursor-pointer" />
